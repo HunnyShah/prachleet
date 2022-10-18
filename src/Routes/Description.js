@@ -35,7 +35,7 @@ function Description() {
         <div class="ratio ratio-1x1">
           <div><img src={data.photo} /></div>
         </div>
-        <div class="ratio ratio-4x9">
+        <div class="ratio ratio-4x3">
           <div>4x3</div>
         </div>
         <div class="ratio ratio-16x9">
