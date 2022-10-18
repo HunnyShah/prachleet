@@ -35,7 +35,7 @@ function Description() {
         <div class="ratio ratio-1x1">
           <div><img className="desimg" src={data.photo} /></div>
         </div>
-        <div class="ratio ratio-4x3">
+        <div>
           <div>IRDB Rate: {data.rate}</div>
           <div>Casting: {data.cast}</div>
           <div dangerouslySetInnerHTML={{ __html: data.info }} />
