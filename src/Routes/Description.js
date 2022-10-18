@@ -32,7 +32,7 @@ function Description() {
           })} */}
 
       <div>
-        <div class="ratio ratio-1x1">
+        <div>
           <div><img className="desimg" src={data.photo} /></div>
         </div>
         <div>
