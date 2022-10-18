@@ -32,17 +32,18 @@ class Watch extends React.Component {
         <section className="movielist">
           {movieList.map((movie) => (
             <div className="movie" key={movie.id}>
-             <a href={`/description/`+ movie.id} > <img
-                src={movie.photo}
-                alt="movielist1"
-                className="movieimg"
-              ></img>
+              <a href={`/description/` + movie.id}>
+                {" "}
+                <img
+                  src={movie.photo}
+                  alt="movielist1"
+                  className="movieimg"
+                ></img>
               </a>
               <h4>{movie.name}</h4>
             </div>
           ))}
         </section>
-        
       </div>
     );
   }

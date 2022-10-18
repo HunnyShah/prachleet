@@ -1,7 +1,6 @@
-
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useParams } from 'react-router';
+import { useParams } from "react-router";
 
 function Description() {
   // calling variables from database
@@ -9,19 +8,18 @@ function Description() {
   const { id } = useParams();
 
   useEffect(() => {
-    if(data.length == 0) {
-    axios({
-      // Assigning api key to fetch data
-      url: `https://prachleet-backend.herokuapp.com/api/descs/`+ id,
-      method: "GET",
-    }).then((res) => {
-      console.log(res);
-      var test = res.data;
-      setData(test);
-    });
-  }
+    if (data.length == 0) {
+      axios({
+        // Assigning api key to fetch data
+        url: `https://prachleet-backend.herokuapp.com/api/descs/` + id,
+        method: "GET",
+      }).then((res) => {
+        console.log(res);
+        var test = res.data;
+        setData(test);
+      });
+    }
   });
-
 
   return (
     <div id="connect">
@@ -32,17 +30,14 @@ function Description() {
               </div>
             ) 
           })} */}
-     
-        
-          <div>
-            {data.id}
-            <img src={data.photo} />
-            <div>IRDB Rate: {data.rate}</div>
-            <div>Casting: {data.cast}</div>
-            <div dangerouslySetInnerHTML={{ __html: data.info }} />
-          </div>
-        
-      
+
+      <div>
+        {data.id}
+        <img src={data.photo} />
+        <div>IRDB Rate: {data.rate}</div>
+        <div>Casting: {data.cast}</div>
+        <div dangerouslySetInnerHTML={{ __html: data.info }} />
+      </div>
     </div>
   );
 }
