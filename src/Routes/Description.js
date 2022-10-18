@@ -33,7 +33,7 @@ function Description() {
 
       <div>
         <div class="ratio ratio-1x1">
-          <div><img src={data.photo} /></div>
+          <div><img className="desimg" src={data.photo} /></div>
         </div>
         <div class="ratio ratio-4x3">
           <div>IRDB Rate: {data.rate}</div>
