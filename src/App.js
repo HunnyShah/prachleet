@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Watch from './Routes/Watch';
+import Header from './Components/Header';
+import Description from './Routes/Description';
+import Wishlist from './Routes/Wishlist';
+import {BrowserRouter,Routes,Route} from "react-router-dom"
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+      {/* <header className="App-header"> */}
+        <Header />
+        <Routes>
+          <Route path='/watch' element={<Watch />}></Route>
+          <Route path='/wishlist' element={<Wishlist />}></Route>
+          <Route path='/description/:id' element={<Description />}/>
+        </Routes>
+      {/* </header> */}
+      </BrowserRouter>
     </div>
   );
 }
