@@ -13,7 +13,7 @@ class Watch extends React.Component {
   componentDidMount() {
     axios({
       // Assigning api key to fetch data
-      url: "http://prachleet-backend.herokuapp.com/api/descs",
+      url: "https://prachleet-backend.herokuapp.com/api/descs",
       method: "GET",
     }).then((res) => {
       console.log(res);
