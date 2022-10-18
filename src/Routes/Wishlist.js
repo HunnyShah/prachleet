@@ -14,7 +14,7 @@ class Wishlist extends React.Component {
     componentDidMount() {
       axios({
         // Assigning api key to fetch data
-        url: "http://127.0.0.1:8000/api/wishlist",
+        url: "http://prachleet-backend.herokuapp.com/api/wishlist",
         method: "GET"
       }).then((res) => {
            console.log(res);

@@ -12,7 +12,7 @@ function Description() {
     if(data.length == 0) {
     axios({
       // Assigning api key to fetch data
-      url: `http://127.0.0.1:8000/api/descs/`+ id,
+      url: `http://prachleet-backend.herokuapp.com/api/descs/`+ id,
       method: "GET",
     }).then((res) => {
       console.log(res);
