@@ -34,8 +34,6 @@ function Description() {
       <div>
         <div>
           <div><img className="desimg" src={data.photo} /></div>
-        </div>
-        <div>
           <div>IRDB Rate: {data.rate}</div>
           <div>Casting: {data.cast}</div>
           <div dangerouslySetInnerHTML={{ __html: data.info }} />
