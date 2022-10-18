@@ -32,11 +32,23 @@ function Description() {
           })} */}
 
       <div>
-        {data.id}
-        <img src={data.photo} />
-        <div>IRDB Rate: {data.rate}</div>
+        <div class="ratio ratio-1x1">
+          <div><img src={data.photo} /></div>
+        </div>
+        <div class="ratio ratio-4x9">
+          <div>4x3</div>
+        </div>
+        <div class="ratio ratio-16x9">
+          <div>16x9</div>
+        </div>
+        <div class="ratio ratio-21x9">
+          <div>21x9</div>
+        </div>
+
+
+        {/* <div>IRDB Rate: {data.rate}</div>
         <div>Casting: {data.cast}</div>
-        <div dangerouslySetInnerHTML={{ __html: data.info }} />
+        <div dangerouslySetInnerHTML={{ __html: data.info }} /> */}
       </div>
     </div>
   );
