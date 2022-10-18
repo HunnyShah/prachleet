@@ -16,10 +16,10 @@ li {
   padding: 2em;
 }
 
-img {
+/* img {
   height: 300px;
   width: 330px;
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
