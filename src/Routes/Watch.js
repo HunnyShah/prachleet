@@ -35,9 +35,9 @@ class Watch extends React.Component {
               <a href={`/description/` + movie.id}>
                 {" "}
                 <img
+                  className="movieimg"
                   src={movie.photo}
                   alt="movielist1"
-                  className="movieimg"
                 ></img>
               </a>
               <h4>{movie.name}</h4>
