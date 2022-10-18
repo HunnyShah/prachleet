@@ -31,7 +31,7 @@ class Watch extends React.Component {
       <div>
         <section className="movielist">
           {movieList.map((movie) => (
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem; background-color:pink">
               <a><img src="movie.photo" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">movie.name</h5>
