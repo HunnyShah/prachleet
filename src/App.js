@@ -3,12 +3,15 @@ import Watch from './Routes/Watch';
 import Header from './Components/Header';
 import Description from './Routes/Description';
 import Wishlist from './Routes/Wishlist';
-import {BrowserRouter,Routes,Route} from "react-router-dom"
+// import Register
+import {BrowserRouter,Routes,Route} from "react-router-dom";
+
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
       {/* <header className="App-header"> */}
+        {/* </> */}
         <Header />
         <Routes>
           <Route path='/watch' element={<Watch />}></Route>

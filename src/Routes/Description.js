@@ -32,11 +32,14 @@ function Description() {
           })} */}
 
       <div>
-        <div>
-          <div><img className="desimg" src={data.photo} /></div>
-          <div>IRDB Rate: {data.rate}</div>
-          <div>Casting: {data.cast}</div>
+        <div className="desciptionpage">
+          <img className="desimg" src={data.photo} />
+          <div className="des">
+            <h2>{data.name}</h2>
+          <div className="rate"><span className="ratespan">IMDB Rate:</span> {data.rate}</div>
+          <h5><span className="castspan">Casting:</span> {data.cast}</h5>
           <div dangerouslySetInnerHTML={{ __html: data.info }} />
+          </div>
         </div>
 
 
